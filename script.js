@@ -15,7 +15,7 @@ function calculateTotal() {
 
     subtotal.innerHTML = '$' + subtotalAmount.toFixed(2)
     totalWithTax.innerHTML = '$' + totalWithTaxAmount.toFixed(2)
-    order.innerHTML = `Your order of ${deviceValue} ${phoneValue}'s will be processed soon!`
+    order.innerHTML = `Your order of ${deviceValue} ${phoneValue.charAt(0).toUpperCase() + phoneValue.slice(1)}'s will be processed soon!`
 }
 
 phone.addEventListener('input', calculateTotal)
