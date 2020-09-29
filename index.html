@@ -4,35 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Phone Prices</title>
 </head>
 <body>
     <div class="calc-box">
         <section id="calculator">
-            <div class="input1">
-                <h1>header</h1>
+            <div class="phone">
+                <h1>Phone</h1>
                 <label>
-                    <input
+                    <select name="phones" id="phones">
+                        <option value="iphone">iPhone</option>
+                        <option value="pixel">Google Pixel</option>
+                        <option value="galaxy">Samsung Galaxy</option>
+                        <option value="oneplus">OnePlus</option>
+                    </select>
                 </label>
             </div>
-            <div class="input2">
-                <h1>header</h1>
+            <div class="price">
+                <h1>Price</h1>
                 <label>
-                    <input
+                    <input type="number" step=".01" id="input-price" placeholder="$0.00">
                 </label>
             </div>
-            <div class="input3">
-                <h1>header</h1>
+            <div class="devices">
+                <h1>Number of Devices</h1>
                 <label>
-                    <input
+                    <input type="number" id="input-devices" placeholder="0">
                 </label>
             </div>
         </section>
     </div>
     <div class="totals-box">
         <section id="totals">
-            <p>total1</p>
-            <div id="display1"></div>
+            <p>Subtotal</p>
+            <div id="total-cost">$0.00</div>
+            <p>Total Including Tax</p>
+            <div id="total-tax">$0.00</div>
         </section>
     </div>
 <script src="script.js"></script>    
