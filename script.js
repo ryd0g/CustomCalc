@@ -18,7 +18,7 @@ function calculateTotal() {
     order.innerHTML = `Your order of ${deviceValue} ${phoneValue.charAt(0).toUpperCase() + phoneValue.slice(1)}'s will be processed soon!`
 }
 function caseColor() {
-    const casecolor = document.querySelector('div')
+    const casecolor = document.querySelector('.calc-box')
 
     const colorinput = document.querySelector('#input-case-color')
     let casecolor_str = colorinput.value
