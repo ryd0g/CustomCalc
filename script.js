@@ -17,8 +17,19 @@ function calculateTotal() {
     totalWithTax.innerHTML = '$' + totalWithTaxAmount.toFixed(2)
     order.innerHTML = `Your order of ${deviceValue} ${phoneValue.charAt(0).toUpperCase() + phoneValue.slice(1)}'s will be processed soon!`
 }
+function caseColor() {
+    const casecolor = document.querySelector('div')
+
+    const colorinput = document.querySelector('#input-case-color')
+    let casecolor_str = colorinput.value
+
+    casecolor.style.backgroundColor = casecolor_str
+}
 
 phone.addEventListener('input', calculateTotal)
 price.addEventListener('input', calculateTotal)
 device.addEventListener('input', calculateTotal)
 order.addEventListener('input', calculateTotal)
+
+const colorinput = document.querySelector('#input-case-color')
+colorinput.addEventListener('input', caseColor)
